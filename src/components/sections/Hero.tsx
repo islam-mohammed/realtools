@@ -16,7 +16,7 @@ const Hero = ({
 }: Props) => {
   return (
     <div
-      className={`w-full flex items-center justify-center ${
+      className={`w-full flex items-center justify-center -mt-24 ${
         className ? className : ""
       } `}
       style={{

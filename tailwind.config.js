@@ -14,6 +14,8 @@ module.exports = {
         heading: "#2F2F2F",
         sectionTitle: "#021850",
         sectionDarkTitle: "#FFF",
+        cardBackground: "#F6F8FD",
+        cardBorderColor: "#F9F9F9",
       },
       fontFamily: {
         sans: ["Poppins", ...defaultTheme.fontFamily.sans],
