@@ -32,7 +32,7 @@ export default function Layout() {
     },
   ];
   return (
-    <div className="w-full md:max-w-[1440px] relative flex flex-col bg-white mx-auto">
+    <div className="w-full md:max-w-[1440px] relative flex flex-col bg-[#F5F5F5] mx-auto">
       <Nav menuItems={menuItems} />
       <Outlet />
       <Footer />

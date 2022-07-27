@@ -1,0 +1,64 @@
+{
+  "storeges": [
+    {
+      "id": 1,
+      "title": "Heading of this Self Storage",
+      "location": "Jersy City, NJ",
+      "totalUnits": 89,
+      "occupancy": "56%",
+      "size": "40,233 Sq Ft",
+      "imageName": "store1.png",
+      "featured": true
+    },
+    {
+      "id": 2,
+      "title": "Heading of this Self Storage",
+      "location": "Jersy City, NJ",
+      "totalUnits": 89,
+      "occupancy": "56%",
+      "size": "40,233 Sq Ft",
+      "imageName": "store2.png",
+      "featured": true
+    },
+    {
+      "id": 3,
+      "title": "Heading of this Self Storage",
+      "location": "Jersy City, NJ",
+      "totalUnits": 89,
+      "occupancy": "56%",
+      "size": "40,233 Sq Ft",
+      "imageName": "store3.png",
+      "featured": true
+    },
+    {
+      "id": 4,
+      "title": "Heading of this Self Storage",
+      "location": "Jersy City, NJ",
+      "totalUnits": 89,
+      "occupancy": "56%",
+      "size": "40,233 Sq Ft",
+      "imageName": "store1.png",
+      "featured": false
+    },
+    {
+      "id": 5,
+      "title": "Heading of this Self Storage",
+      "location": "Jersy City, NJ",
+      "totalUnits": 89,
+      "occupancy": "56%",
+      "size": "40,233 Sq Ft",
+      "imageName": "store2.png",
+      "featured": false
+    },
+    {
+      "id": 7,
+      "title": "Heading of this Self Storage",
+      "location": "Jersy City, NJ",
+      "totalUnits": 89,
+      "occupancy": "56%",
+      "size": "40,233 Sq Ft",
+      "imageName": "store3.png",
+      "featured": false
+    }
+  ]
+}

@@ -1,52 +1,22 @@
-import React from "react";
-import FeatureItem from "../FeatureItem";
+import { useEffect, useState } from "react";
+import { getFeaturedStorages } from "../../dataService";
+import { ListingItem } from "../../models/ListingItem";
+import FeatureItem from "../StorageCard";
 import Slider from "../Slider";
 
-type Props = {};
+export default function Featured() {
+  const [storages, setStorages] = useState<ListingItem[]>([]);
 
-export interface IFeatured {
-  id: number;
-  title: string;
-  location: string;
-  totalUnits: number;
-  occupancy: string;
-  size: string;
-  imageName: string;
-}
-
-export default function Featured({}: Props) {
-  const featured: IFeatured[] = [
-    {
-      id: 1,
-      title: "Heading of this Self Storage",
-      location: "Jersy City, NJ",
-      totalUnits: 89,
-      occupancy: "56%",
-      size: "40,233 Sq Ft",
-      imageName: "store1.png",
-    },
-    {
-      id: 2,
-      title: "Heading of this Self Storage",
-      location: "Jersy City, NJ",
-      totalUnits: 89,
-      occupancy: "56%",
-      size: "40,233 Sq Ft",
-      imageName: "store2.png",
-    },
-    {
-      id: 3,
-      title: "Heading of this Self Storage",
-      location: "Jersy City, NJ",
-      totalUnits: 89,
-      occupancy: "56%",
-      size: "40,233 Sq Ft",
-      imageName: "store3.png",
-    },
-  ];
+  useEffect(() => {
+    const getAsyncStrages = async () => {
+      const list = await getFeaturedStorages();
+      setStorages(list);
+    };
+    getAsyncStrages();
+  }, []);
   return (
     <>
-      <div className="max-w-3xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+      <div className="max-w-3xl mx-auto text-center px-4 sm:px-6 lg:px-8 relative ">
         <h2 className="text-3xl font-semibold sm:text-4xl text-sectionTitle">
           Featured Self Storages
         </h2>
@@ -57,8 +27,8 @@ export default function Featured({}: Props) {
       </div>
       <div className="mx-auto mt-9 md:mt-12 lg:mt-[60px]">
         <ul className="w-full mx-auto flex flex-wrap gap-5 justify-center">
-          {featured.map((item) => (
-            <FeatureItem key={item.id} featuredItem={item} />
+          {storages.map((storage) => (
+            <FeatureItem key={storage.id} storageItem={storage} />
           ))}
         </ul>
         <div className="mt-8 md:mt-14">

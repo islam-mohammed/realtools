@@ -1,7 +1,7 @@
 import React from "react";
 
 type Props = {
-  varaity?: "primary" | "secondry";
+  varaity?: "primary" | "cta";
   className?: string;
   children: React.ReactNode;
 };

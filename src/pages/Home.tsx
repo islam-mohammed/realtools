@@ -1,6 +1,7 @@
 import Button from "../components/Button";
 import Featured from "../components/sections/Featured";
 import Hero from "../components/sections/Hero";
+import Listing from "../components/sections/Listing";
 
 export default function Home() {
   return (
@@ -18,12 +19,12 @@ export default function Home() {
             <div className="w-full md:w-auto flex flex-col md:flex-row justify-between gap-5 mt-[52px]">
               <Button
                 className="w-full md:w-[251px] h-[60px] text-lg font-medium"
-                varaity="secondry"
+                varaity="cta"
               >
                 Sell Your Self Storage
               </Button>
               <Button
-                varaity="secondry"
+                varaity="cta"
                 className="w-full md:w-[251px] h-[60px] text-base bg-white font-semibold"
               >
                 Active Self Storage Listings
@@ -32,8 +33,14 @@ export default function Home() {
           </div>
         </Hero>
       </div>
-      <main className="p-5 md:p-24">
+      <main className="py-5 md:py-24 relative">
+        <img
+          src="/assets/images/shap_1.svg "
+          className="absolute top-0 left-0"
+          alt="shape"
+        />
         <Featured />
+        <Listing />
       </main>
     </>
   );

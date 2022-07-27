@@ -30,7 +30,7 @@ const Nav = ({ isTransparent = true, menuItems }: Props) => {
               </span>
             ))}
             <Button
-              varaity="secondry"
+              varaity="cta"
               className="w-[110px] md:h-8 lg:h-9 md:text-sm lg:text-lg"
             >
               Contact
@@ -38,7 +38,7 @@ const Nav = ({ isTransparent = true, menuItems }: Props) => {
           </div>
         </div>
       </div>
-      <div className="relative pt-6 pb-16 sm:pb-24 z-20 md:hidden">
+      <div className="relative pt-6 sm:pb-24 z-20 md:hidden">
         <Popover>
           <div className="max-w-7xl mx-auto px-4 sm:px-6">
             <nav
@@ -99,7 +99,7 @@ const Nav = ({ isTransparent = true, menuItems }: Props) => {
                   ))}
                 </div>
                 <Button
-                  varaity="secondry"
+                  varaity="cta"
                   className="block w-full px-5 py-3 text-center font-medium rounded-none"
                 >
                   Contact
