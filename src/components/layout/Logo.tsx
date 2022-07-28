@@ -14,7 +14,7 @@ const Logo = (props: any) => (
     </svg>
     {props.showText && (
       <span
-        className={`ml-2 font-inter font-semibold text-xl text-white ${props.className}`}
+        className={`ml-2 font-inter font-semibold text-xl md:text-base lg:text-xl text-white ${props.className}`}
       >
         StorageConnect
       </span>

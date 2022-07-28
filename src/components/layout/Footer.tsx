@@ -11,7 +11,7 @@ import EarthIcon from "../icons/EarthIcon";
 export default function Footer() {
   return (
     <div
-      className={`h-auto text-base bg-white pt-[154px] pb-5 md:pb-14 px-[76px] gap-10  text-footerColor font-roboto ${styles.footer}`}
+      className={`h-auto text-base bg-white pt-[154px] pb-5 md:pb-14 px-5 md:px-14 lg:px-[76px] gap-10  text-footerColor font-roboto ${styles.footer}`}
     >
       <img
         src="/assets/images/shapes/shape_6.svg"
@@ -75,7 +75,7 @@ export default function Footer() {
         <h4 className="text-heading font-bold text-lg uppercase">
           Let’s get social
         </h4>
-        <div className="grid grid-cols-4 mt-7 justify-center items-center">
+        <div className="grid grid-cols-4 mt-7 justify-center items-center gap-4 m-w-[225px]">
           <FacebookIcon fill="#1849C6" width={40} height={40} />
           <InstagramIcon fill="#1849C6" width={40} height={40} />
           <TwitterIcon fill="#1849C6" width={40} height={40} />
@@ -96,7 +96,7 @@ export default function Footer() {
               <select
                 id="language"
                 name="language"
-                className="appearance-none block w-full bg-none bg-white border border-gray-300 rounded-md py-2 pl-11 pr-10 text-lg text-gray-900 focus:outline-none sm:text-sm font-medium mt-4"
+                className="appearance-none block w-full bg-none bg-white border border-primary rounded-md py-2 pl-11 pr-10 text-lg text-gray-900 focus:outline-none sm:text-sm font-medium mt-4"
                 defaultValue="English"
               >
                 <option className="my-1">English</option>

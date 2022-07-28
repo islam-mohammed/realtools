@@ -50,7 +50,7 @@ export default function Learning() {
         <div className="mt-8 md:mt-14 flex justify-center">
           <Button
             varaity="cta"
-            className="text-paragraphLight z-10 p-7 font-semibold text-xl w-[280px] md:w-[364px]"
+            className="text-paragraphLight z-10 p-7 font-semibold text-xl  w-[364px]"
           >
             Explore The Learning Section
           </Button>

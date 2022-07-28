@@ -6,7 +6,7 @@
       "time": "5hrs ago",
       "tag": "Buy",
       "by": "Raza",
-      "imageName": "post_01.webp"
+      "imageName": "post_02.webp"
     },
     {
       "id": 2,
@@ -14,7 +14,7 @@
       "time": "2days ago",
       "tag": "Operate",
       "by": "Raza",
-      "imageName": "post_02.webp"
+      "imageName": "post_01.webp"
     },
     {
       "id": 3,
@@ -22,7 +22,7 @@
       "time": "3days ago",
       "tag": "Sell",
       "by": "Raza",
-      "imageName": "post_03.webp"
+      "imageName": "post_04.webp"
     },
     {
       "id": 4,
@@ -30,7 +30,7 @@
       "time": "5days ago",
       "tag": "Buy",
       "by": "Raza",
-      "imageName": "post_04.webp"
+      "imageName": "post_03.webp"
     }
   ]
 }

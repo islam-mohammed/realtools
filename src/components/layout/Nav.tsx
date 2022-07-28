@@ -14,13 +14,13 @@ const Nav = ({ isTransparent = true, menuItems }: Props) => {
   return (
     <>
       <div
-        className={`hidden w-full md:flex md:px-9 xl:px-[98px]  z-10 h-24 overflow-hidden text-white  justify-between items-center ${
+        className={`hidden w-full lg:flex md:px-9 xl:px-[98px] z-10 h-24 overflow-hidden text-white  justify-between items-center ${
           !isTransparent ? "bg-primary" : "bg-transparent"
         }`}
       >
         <Logo showText={true} />
         <div className="flex lg:ml-10 lg:gap-5 xl:gap-10 xl:ml-0 items-center w-full">
-          <div className="flex gap-1 md:gap-5 xl:gap-10 justify-end items-center w-full">
+          <div className="flex gap-1 md:gap-3 lg:gap-5 xl:gap-10 justify-end items-center w-full">
             {menuItems.map((item) => (
               <span
                 className="md:text-sm lg:text-lg cursor-pointer"
@@ -38,18 +38,18 @@ const Nav = ({ isTransparent = true, menuItems }: Props) => {
           </div>
         </div>
       </div>
-      <div className="relative pt-6 sm:pb-24 z-20 md:hidden">
+      <div className="relative pt-6 z-20 lg:hidden">
         <Popover>
           <div className="max-w-7xl mx-auto px-4 sm:px-6">
             <nav
-              className="relative flex items-center justify-between sm:h-10 md:justify-center"
+              className="relative flex items-center justify-between sm:h-10 lg:justify-center"
               aria-label="Global"
             >
-              <div className="flex items-center flex-1 md:absolute md:inset-y-0 md:left-0">
-                <div className="flex items-center justify-between w-full md:w-auto">
+              <div className="flex items-center flex-1 lg:absolute lg:inset-y-0 lg:left-0">
+                <div className="flex items-center justify-between w-full lg:w-auto">
                   <Logo showText={true} />
-                  <div className="-mr-2 flex items-center md:hidden">
-                    <Popover.Button className="bg-transparent p-2 inline-flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-inset ">
+                  <div className="flex items-center lg:hidden">
+                    <Popover.Button className="bg-transparent p-1 inline-flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-inset border-2 rounded border-white">
                       <span className="sr-only">Open main menu</span>
                       <MenuIcon
                         className="h-6 w-6 text-white"
@@ -73,7 +73,7 @@ const Nav = ({ isTransparent = true, menuItems }: Props) => {
           >
             <Popover.Panel
               focus
-              className="absolute z-10 top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden"
+              className="absolute z-10 top-0 inset-x-0 p-2 transition transform origin-top-right lg:hidden"
             >
               <div className="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden">
                 <div className="px-5 pt-4 flex items-center justify-between">

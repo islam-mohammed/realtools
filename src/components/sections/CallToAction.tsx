@@ -4,7 +4,7 @@ import MessageIcon from "../icons/MessageIcon";
 export default function CallToAction() {
   return (
     <div
-      className=" h-auto pt-16 md:pt-0 md:h-[584px] flex flex-col md:flex-row justify-center items-center"
+      className=" h-auto pt-16 pb-16 md:pt-0 md:pb-0 md:h-[584px] flex flex-col md:flex-row justify-center items-center"
       style={{
         background: "url(/assets/images/bg_5.webp), #E8EFFF",
         backgroundSize: "cover",
