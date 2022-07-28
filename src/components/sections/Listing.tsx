@@ -45,7 +45,7 @@ export default function Listing() {
       <div className="mx-auto mt-9 md:mt-12 lg:mt-[60px]">
         <ul className="w-full mx-auto flex flex-wrap gap-5 justify-center">
           {storages.map((item) => (
-            <FeatureItem key={item.id} storageItem={item} />
+            <FeatureItem key={item.id} storageItem={item} dropShadow={true} />
           ))}
         </ul>
         <div className="mt-8 md:mt-14 flex justify-center">

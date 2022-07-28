@@ -4,6 +4,7 @@ const Logo = (props: any) => (
       width={30}
       height={28}
       fill={props.fill || ""}
+      className="drop-shadow-lg"
       xmlns="http://www.w3.org/2000/svg"
       {...props}
     >
@@ -14,7 +15,7 @@ const Logo = (props: any) => (
     </svg>
     {props.showText && (
       <span
-        className={`ml-2 font-inter font-semibold text-xl md:text-base lg:text-xl text-white ${props.className}`}
+        className={`ml-2 font-inter font-semibold text-xl md:text-base lg:text-xl text-shadow-lg text-white ${props.className}`}
       >
         StorageConnect
       </span>

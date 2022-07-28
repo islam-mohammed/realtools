@@ -7,12 +7,21 @@ import UnitIcon from "./icons/UnitIcon";
 
 type Props = {
   storageItem: Storage;
+  dropShadow?: boolean;
 };
 
-export default function StorageCard({ storageItem }: Props) {
+export default function StorageCard({
+  storageItem,
+  dropShadow = false,
+}: Props) {
   return (
     <li>
-      <div className="bg-cardBackground border box-border border-cardBorderColor rounded-[10px] w-[360px] p-5 md:w-[398px] md:p-[23px] md:pt-[19px]">
+      <div
+        className="bg-cardBackground border box-border border-cardBorderColor rounded-[10px] w-[360px] p-5 md:w-[398px] md:p-[23px] md:pt-[19px]"
+        style={{
+          boxShadow: dropShadow ? "0px 10px 40px rgba(1, 31, 109, 0.4)" : "",
+        }}
+      >
         <div className="aspect-w-3 aspect-h-2">
           <img
             className="object-cover shadow-lg rounded-lg"
