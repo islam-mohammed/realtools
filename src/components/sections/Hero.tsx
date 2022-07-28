@@ -24,7 +24,6 @@ const Hero = ({
           backgroundGradient &&
           "linear-gradient(120.67deg,rgba(24, 73, 198, 0.9) 50.54%, rgba(24, 73, 198, 0) 85.02%),"
         }url('${backgroundUrl}'`,
-        backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
         backgroundSize: "cover",
         height,

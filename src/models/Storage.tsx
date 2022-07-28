@@ -1,4 +1,4 @@
-export interface ListingItem {
+export interface Storage {
   id: number;
   title: string;
   location: string;

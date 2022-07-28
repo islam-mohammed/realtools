@@ -1,0 +1,19 @@
+.footer {
+  display: grid;
+  grid-template-columns: 1.3fr 0.7fr 1.2fr 0.8fr;
+  grid-template-rows: 1fr;
+}
+@media (max-width: 1024px) {
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+  }
+}

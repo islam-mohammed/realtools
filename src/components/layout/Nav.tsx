@@ -18,7 +18,7 @@ const Nav = ({ isTransparent = true, menuItems }: Props) => {
           !isTransparent ? "bg-primary" : "bg-transparent"
         }`}
       >
-        <Logo />
+        <Logo showText={true} />
         <div className="flex lg:ml-10 lg:gap-5 xl:gap-10 xl:ml-0 items-center w-full">
           <div className="flex gap-1 md:gap-5 xl:gap-10 justify-end items-center w-full">
             {menuItems.map((item) => (
@@ -47,7 +47,7 @@ const Nav = ({ isTransparent = true, menuItems }: Props) => {
             >
               <div className="flex items-center flex-1 md:absolute md:inset-y-0 md:left-0">
                 <div className="flex items-center justify-between w-full md:w-auto">
-                  <Logo />
+                  <Logo showText={true} />
                   <div className="-mr-2 flex items-center md:hidden">
                     <Popover.Button className="bg-transparent p-2 inline-flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-inset ">
                       <span className="sr-only">Open main menu</span>
@@ -78,7 +78,7 @@ const Nav = ({ isTransparent = true, menuItems }: Props) => {
               <div className="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden">
                 <div className="px-5 pt-4 flex items-center justify-between">
                   <div>
-                    <Logo className="text-gray-900" />
+                    <Logo className="text-gray-900" showText={true} />
                   </div>
                   <div className="-mr-2">
                     <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset ">

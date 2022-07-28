@@ -1,7 +1,11 @@
 import Button from "../components/Button";
+import Buy from "../components/sections/Buy";
+import CallToAction from "../components/sections/CallToAction";
 import Featured from "../components/sections/Featured";
 import Hero from "../components/sections/Hero";
+import Learning from "../components/sections/Learning";
 import Listing from "../components/sections/Listing";
+import Sell from "../components/sections/Sell";
 
 export default function Home() {
   return (
@@ -33,14 +37,18 @@ export default function Home() {
           </div>
         </Hero>
       </div>
-      <main className="py-5 md:py-24 relative">
+      <main className="pt-5 md:pt-24 relative">
         <img
-          src="/assets/images/shap_1.svg "
+          src="/assets/images/shapes/shape_1.svg "
           className="absolute top-0 left-0"
-          alt="shape"
+          alt=""
         />
         <Featured />
         <Listing />
+        <Sell />
+        <Buy />
+        <Learning />
+        <CallToAction />
       </main>
     </>
   );

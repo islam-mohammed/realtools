@@ -15,7 +15,7 @@ export default function Button({
   return (
     <button
       className={`${
-        varaity === "primary" ? "bg-primary" : "bg-secondary text-sectionTitle"
+        varaity === "primary" ? "bg-primary" : "bg-cta text-sectionTitle"
       }  rounded-[10px] lg:font-medium ${className}`}
       {...props}
     >

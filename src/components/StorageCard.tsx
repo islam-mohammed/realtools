@@ -1,4 +1,4 @@
-import { ListingItem } from "../models/ListingItem";
+import { Storage } from "../models/Storage";
 import Button from "./Button";
 import LocationIcon from "./icons/LocationIcon";
 import OccupancyIcon from "./icons/OccupancyIcon";
@@ -6,7 +6,7 @@ import SizeIcon from "./icons/SizeIcon";
 import UnitIcon from "./icons/UnitIcon";
 
 type Props = {
-  storageItem: ListingItem;
+  storageItem: Storage;
 };
 
 export default function StorageCard({ storageItem }: Props) {

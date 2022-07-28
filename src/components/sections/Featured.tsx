@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
 import { getFeaturedStorages } from "../../dataService";
-import { ListingItem } from "../../models/ListingItem";
+import { Storage } from "../../models/Storage";
 import FeatureItem from "../StorageCard";
 import Slider from "../Slider";
 
 export default function Featured() {
-  const [storages, setStorages] = useState<ListingItem[]>([]);
+  const [storages, setStorages] = useState<Storage[]>([]);
 
   useEffect(() => {
     const getAsyncStrages = async () => {
